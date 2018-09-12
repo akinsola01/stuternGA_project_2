@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("https://i.imgur.com/cSpwAOa.jpg");
+      background-size: cover;
+      color: #0ff;
+    }
+    a {
+      color: #0ff;
+    }
+    h1 {
+      font-size: 50px;
+      font-family: verdana;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border-radius: 100px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,50,50,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/EbApvge.jpg">
+    <h1>Sola's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Tech</a></li>
+      <li><a href="#">Gadgets</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>What is a Patent?</h2>
+    <p>A patent for an invention is granted by government to the inventor, giving the inventor the right to stop others, for a limited period, from making, using or selling the invention without their ... <a>Read more</a>
+    </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>What is a Copyright?</h2>
+    <p>Copyright is a legal right, existing in many countries, that grants the creator of an original work exclusive rights to determine whether, and under what conditions, this original work may be used by others. Copyright is applicable to certain forms of creative work... <a>Read more</a>
+    </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Understanding the Copyright License</h2>
+    <p>The Web is full of creative and practical resources that we can use to improve our projects. Photography, fonts, music and code are perfect examples. Finding stock objects and existing implementations is often quicker, cheaper and more practical than producing... <a> Read more</a>
+    </p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("clicked!");
+    });
+  </script>
+</body>
